@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>ByteCake - Pancake Information</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/022/989/161/small/abstract-background-with-some-smooth-lines-in-it-and-pink-a-pink-and-purple-background-with-a-pink-background-pink-and-purple-blur-soft-gradient-pastel-wallpaper-for-a-banner-website-media-advertising-photo.JPG");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        color: #4b2e1f;
+    }
+
+    .overlay {
+        min-height: 100vh;
+        background: rgba(255, 241, 214, 0.35);
+        padding: 25px 18px 50px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 520px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: Georgia, serif;
+        font-size: 30px;
+        line-height: 1.3;
+        color: #6b3e26;
+        margin: 10px 0 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-family: cursive;
+        color: #8b5a3c;
+        font-size: 16px;
+        margin: 0 0 28px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.82);
+
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+
+        padding: 22px;
+        margin-bottom: 25px;
+        border-radius: 25px;
+
+        box-shadow:
+            0 10px 30px rgba(75, 46, 31, 0.18);
+    }
+
+    .pancake-image {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 20px;
+        display: block;
+
+        box-shadow:
+            0 5px 15px rgba(75, 46, 31, 0.15);
+    }
+
+    .card h2 {
+        text-align: center;
+        color: #6b3e26;
+        font-family: cursive;
+        font-size: 23px;
+        margin: 23px 0 10px;
+    }
+
+    .description {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 8px 0 22px;
+    }
+
+    .info-box {
+        background: rgba(255, 241, 214, 0.78);
+        padding: 22px;
+        margin-top: 18px;
+        border-radius: 18px;
+        min-height: 100px;
+    }
+
+    .info-box p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
+        text-align: center;
+    }
+
+    .price-box {
+        text-align: center;
+
+        background: rgba(255, 241, 214, 0.78);
+
+        padding: 8px 12px;
+        margin: 14px auto 0;
+
+        border-radius: 12px;
+
+        max-width: 150px;
+    }
+
+    .price-label {
+        color: #6b3e26;
+        font-family: Georgia, serif;
+        font-size: 15px;
+        margin: 0 0 2px;
+    }
+
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #6b3e26;
+        margin: 0;
+    }
+
+    .back-btn {
+        display: block;
+        width: fit-content;
+        margin: 8px auto 0;
+        padding: 11px 22px;
+        background: #6b3e26;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .back:hover {
+        background-color: #8b5a3c;
+    }
+
+    .back:active {
+        transform: scale(0.97);
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 22px;
+        font-size: 12px;
+        color: #6b3e26;
+    }
+
+    @media (max-width: 360px) {
+
+        .overlay {
+            padding: 20px 14px 40px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+        }
+
+        .card {
+            padding: 17px;
+            margin-bottom: 22px;
+        }
+
+        .pancake-image {
+            height: 200px;
+        }
+
+        .card h2 {
+            font-size: 21px;
+        }
+
+        .description {
+            font-size: 15px;
+        }
+
+        .info-box {
+            padding: 20px 18px;
+            min-height: 95px;
+        }
+
+        .info-box p {
+            font-size: 14px;
+        }
+
+        .price-box {
+            padding: 7px 10px;
+            max-width: 140px;
+        }
+
+        .price {
+            font-size: 19px;
+        }
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <h1>
+            INFORMATION OF THE PANCAKES
+        </h1>
+
+        <p class="subtitle">
+            Choose your favorite sweetness ♡
+        </p>
+
+        <div class="card">
+
+            <img
+                src="https://i.pinimg.com/736x/17/31/61/17316131585964cac207d59d034aaa99.jpg"
+                alt="Chocolate Pancake"
+                class="pancake-image"
+            >
+
+            <h2>
+                🍫 Chocolate Pancake
+            </h2>
+
+            <div class="info-box">
+
+                <p>
+                    Soft and fluffy pancake filled with rich and delicious chocolate.
+                </p>
+
+            </div>
+
+            <div class="price-box">
+
+                <p class="price-label">
+                    💰 Price
+                </p>
+
+                <p class="price">
+                    ₱25.00
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img
+                src="https://i.pinimg.com/474x/17/bc/6a/17bc6a0634afe8080651f4e62a09fdf9.jpg"
+                alt="Ube Pancake"
+                class="pancake-image"
+            >
+
+            <h2>
+                🍠 Ube Pancake
+            </h2>
+
+            <div class="info-box">
+
+                <p>
+                    Soft and fluffy pancake with a sweet and creamy ube filling.
+                </p>
+
+            </div>
+
+            <div class="price-box">
+
+                <p class="price-label">
+                    💰 Price
+                </p>
+
+                <p class="price">
+                    ₱25.00
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img
+                src="https://i.pinimg.com/474x/e0/fa/58/e0fa58fb60ef7f6925a586b8b54c633a.jpg"
+                alt="Cheese Pancake"
+                class="pancake-image"
+            >
+
+            <h2>
+                🧀 Cheese Pancake
+            </h2>
+
+            <div class="info-box">
+
+                <p>
+                    Soft and fluffy pancake with a creamy and savory cheese filling.
+                </p>
+
+            </div>
+
+            <div class="price-box">
+
+                <p class="price-label">
+                    💰 Price
+                </p>
+
+                <p class="price">
+                    ₱25.00
+                </p>
+
+            </div>
+
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Back to Home
+        </a>
+
+        <p class="footer">
+            Made with sweetness & creativity ♡
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
